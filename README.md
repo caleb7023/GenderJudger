@@ -4,4 +4,9 @@ Data source from : [Biggest gender/face recognition dataset.](https://www.kaggle
 
 ProcessImg.py will process all imgs in the man and woman folder to npy file. (gonna be saved to the Data folder)
 And will be rescaled to 100x100.
+<<<<<<< HEAD
 The inside of the woman and man file is too large so its emptyed on github XD
+=======
+The inside of the woman and man file is too large so its emptyed on github XD
+To process the data, extract the data set to this directory and run ProcessImg.py.
+>>>>>>> 2286d7d4 (cleaned up code and fixed issues)
