@@ -1,30 +1,11 @@
-<<<<<<< HEAD
-=======
 #!/usr/bin/env python3
 
 # Author: caleb7023
 
->>>>>>> 2286d7d4 (cleaned up code and fixed issues)
 import os
 import cv2
 import numpy as np
 
-<<<<<<< HEAD
-def main():
-    for index, dir in enumerate(os.listdir("man/")):
-        Img = cv2.imread(f"man/{dir}")
-        cv2.resize(Img, (100, 100))
-        np.save(f"Data/Man/{index}", Img)
-
-    for index, dir in enumerate(os.listdir("woman/")):
-        Img = cv2.imread(f"woman/{dir}")
-        cv2.resize(Img, (100, 100))
-        np.save(f"Data/Woman/{index}", Img)
-
-
-if __name__ == "__main__":
-    main()
-=======
 # Create the Man/Woman directory in ./Data directory to save processed img
 # If the directory exists, its gonna be passed.
 try: Path = os.path.join("./"    , "Data" ); os.mkdir(Path)
@@ -60,4 +41,3 @@ def ProccesImg(Man: bool):
 if __name__ == "__main__":
     main()
 
->>>>>>> 2286d7d4 (cleaned up code and fixed issues)
