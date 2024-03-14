@@ -2,6 +2,8 @@
 
 # Author: caleb7023
 
+# TODO: make that it will create a terms and totalfails file in data
+
 import os
 import cv2
 import numpy as np
