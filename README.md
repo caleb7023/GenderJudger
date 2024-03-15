@@ -1,6 +1,6 @@
 # GenderJudger
 
-To run this programm, first follow [Process data](github.com/caleb7023/GenderJudger/tree/ProcessJPGFile).
+To run this programm, first follow [Process data](https://github.com/caleb7023/GenderJudger/tree/ProcessJPGFile).
 
 Then drop the data directory that was created to this directory.
 And run the Reset.py.
