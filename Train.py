@@ -49,8 +49,8 @@ def main():
         Fails = 0
 
         for i in range(10000):
-            Fails += Train(f"Data/man/{Terms % ManFileCount}.npy"    , True)
-            Fails += Train(f"Data/woman/{Terms % WomanFileCount}.npy", False)
+            Fails += Train(f"Data/man/{Terms*.5 % ManFileCount}.npy"    , True)
+            Fails += Train(f"Data/woman/{Terms*.5 % WomanFileCount}.npy", False)
             Terms += 2
         
         TotalFails += Fails
