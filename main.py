@@ -4,7 +4,7 @@
 
 import cv2
 
-import cupy as cp
+import numpy as np
 
 # Set up camera
 CAMERA = cv2.VideoCapture(0)
@@ -13,11 +13,11 @@ CAMERA.set(cv2.CAP_PROP_FRAME_WIDTH, 100)
 CAMERA.set(cv2.CAP_PROP_FRAME_HEIGHT, 100)
 
 # Load the neuron weights for judging the gender from the img
-NEURON_WEIGHTS = cp.load("./TrainData/NeuronWeights.npy")
+NEURON_WEIGHTS = np.load("./TrainData/NeuronWeights.npy")
 
 def JudgeGender(Img) -> bool:
     # True means the img is a img of a man face
-    return True if 0 < cp.sum(NEURON_WEIGHTS * Img) else False
+    return True if 0 < np.sum(NEURON_WEIGHTS * Img) else False
 
 
 def main():
